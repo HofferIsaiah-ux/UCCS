@@ -1,0 +1,49 @@
+package Default;
+import java.util.*;
+/* Isaiah Hoffer
+ * CS1150 (M/W)
+ * 10/6/24
+ * Assignment 5
+ * This code will introduce me to while loop and further my 
+ * knowledge of if statements. It will use math functions and printf().
+ * It will simulate of series of rolls to get a 4 of a kind. 
+ */
+public class HofferIsaiahAssignment5 {
+	
+	public static void main(String[] args) {
+		
+		//Create counters for each 1-4 of a kind  
+		int oneOfAKindCount = 0;
+		intindCount = 0;
+		threeOfAKind = 0;
+		fourOfAKindCount =0 0;
+
+		//Create a total amount of rolls counter  
+
+		//TotalRolls 
+
+		//Create Strings to hold name of roll  
+
+		//oneOfAKindStr, twoOfAKindStr, threeOfAKindStr, fourOfAKindStr 
+
+		//Create a while loop to keep going until fourOfAKindCount = 1  
+
+		//Create 4 different variablea (int) 
+
+		//rollOne, rollTwo, rollThree, rollFour 
+
+		//Set them equal to 1 + math.Random * 7  
+
+		//Use if statements to check what dice equal each other  
+
+		//Add 1 to respected counter 
+
+		//Add one to totalRolls 
+
+		//Display roll values and roll number and what # of a kind 
+
+		//Out of loop, display percentage of each 1-4 of a kind and total number of rolls  
+		
+		
+	}
+}
