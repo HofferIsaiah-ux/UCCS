@@ -1,2 +1,2 @@
-# UCCS-Computer-Science-
-All UCCS Cs Classes Took 
+# UCCS
+All UCCS Class Files 
