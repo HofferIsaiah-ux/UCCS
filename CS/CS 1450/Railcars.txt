@@ -1,0 +1,11 @@
+109 military Washington DC
+521 parrots West Palm Beach
+817 military Charleston
+500 coal West Palm Beach
+214 coal Orlando
+245 parrots Orlando
+814 autos Charleston
+108 autos Washington DC
+507 autos West Palm Beach
+562 parrots West Palm Beach
+117 coal Washington DC
