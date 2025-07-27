@@ -1,0 +1,11 @@
+10
+Hero Mr. Incredible
+Monster Godzilla
+Droid BB-8
+Villain Lex Luthor
+Hero Superman
+Monster Mike Wazowski
+Droid R2-D2
+Hero Flash
+Monster Sulley
+Villain Darth Vader
