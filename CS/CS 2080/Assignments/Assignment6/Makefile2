@@ -1,0 +1,29 @@
+# Compiler and flags
+CC = gcc
+CFLAGS = -Wall -g
+
+# List of object files
+OBJ = main.o math_utils.o
+	
+# The target program
+TARGET = calculator
+
+# Rule to build the target program
+$(TARGET): $(OBJ)
+	$(CC) $(CFLAGS) -o $@ $^ 
+
+# Rule to compile main.c
+%.o: %.c 
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Clean up the build files
+clean:
+	rm -f $(OBJ)
+# Install
+Install:
+	mkdir -p program 
+	mv $(TARGET) ./program
+
+#clean executable
+clean_exe:
+	rm -rf program
