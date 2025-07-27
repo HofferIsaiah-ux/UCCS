@@ -1,0 +1,15 @@
+/etc/skel/.bashrc
+/etc/speech-dispatcher/modules/epos-generic.conf
+/etc/speech-dispatcher/modules/mary-generic.conf
+/etc/update-motd.d/50-motd-news
+/etc/update-motd.d/90-updates-available
+/etc/vmware-tools/poweroff-vm-default
+/etc/vmware-tools/poweron-vm-default
+/etc/vmware-tools/resume-vm-default
+/etc/vmware-tools/scripts/vmware/network
+/etc/vmware-tools/suspend-vm-default
+/etc/vmware-tools/vgauth/schemas/xmldsig-core-schema.xsd
+/etc/wpa_supplicant/functions.sh
+/etc/wpa_supplicant/ifupdown.sh
+/etc/X11/Xsession
+/etc/xdg/Xwayland-session.d/00-at-spi
