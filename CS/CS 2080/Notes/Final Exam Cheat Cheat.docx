@@ -1,0 +1,105 @@
+Question 1: Sed & Basic Linux Commands
+	Linux Basic: 
+		ls	cd	rm 	rm -r	mv	cp 
+	Sed Commands: $ -> Last Line 
+		Replace: sed 's/old/new/'			Delete Line: sed '/string/d' 
+		Print Lines: sed -n '3,5p'			Insert Line: sed '2i\new line' 
+		Append Line: sed '2a\new line'			Change Line: sed '2c\new content' 
+		Multiple Edits: sed -e 's/a/b/' -e 's/x/y/' 	Using Regex: sed -n '/pattern/p' 
+		Word Boundary:	sed 's/\< word word \>/word/g' 
+		
+Question 2: Understanding Sed Commands: 
+	What dooes this sed command do? 
+		sed 's/[0-9]/#/g' -> replaces all digits with # 
+		sed -n '/^abc/p' -> prints lines starting with abc 
+
+Question 3: 
+	Key Elements: target: prerequsites followed by commands		 Useful Variables:	
+	Use PHONY to declare targets that don't represent files 		$@: Name of Target
+		.PHONY clean 							$<: First Dependency 
+		clean: 								$^: All Dependency 
+			rm -f *.o myprogram 					$*: Target Name Without Extention
+	Example: 								-c: Compile .c Files 
+		CC = gcc 							-o: Complile .o Files & TARGET 
+		CFLAGS = -Wall -g 						%.?: Pattern Rules, Shorten Code  
+		OBJ = main.o utils.o
+		TARGET = program 
+		
+Question 4: Reading a Makefile 
+	Analyze: 
+		1. Dependency flow between targets 
+		2. Command purpose (gcc, rm, etc) 
+		3. Variable usage and substitution 
+	
+Question 5: Understanding Gawk Commands 
+	Example 1: 
+		gawk '$1 ~ /^[BbC]/ {print}' file1.txt -> Prints lines where first field starts with B, b, or C 
+	Example 2: 
+		gawk '$1 ~ /[[^BbC]/ {print}' file1.txt -> prints lines where first field doesn't contain B, b, or C
+	Example 3: 
+		gawk 'END {print NR}' file.txt -> Count Lines 
+	Example 4: 
+		gawk '{sum += $2} END {print sum}' file.txt -> Sum Column 2
+	Example 5: 
+		gawk -F ':' '{print $1, $2}' /etc/passwd -> Custion field separator 
+	Example 6: 
+		gawk '{print FILENAME, FNR, $0}' file1.txt file2.txt -> Print Filename and Line Number 
+	Example 7: 
+		gawk 'tolower($1) ~ /g[rR][e][nN]/ && !/[E]/ { print $1, $3 }' file.txt
+	printf formatting: 
+		gawk '{printf "%-10s %5.2f\n", $1, $2}' 
+		gawk '{printf "Name: %-10s | Score %5.1f\n", $1, $2}' scores.txt 
+
+Question 6: More Linux Commands 
+	head -n 5	tail -n 5	grep 'pattern' file	px aux: view proesses 
+	top: real time view	kill PID	sort file.txt
+
+Question 7: Chmod & Permissions
+	Numeric: chmod 775 file 
+		7 = rwx, 5= r-x, 4 = r
+	Symbolic: 
+		chmod u+x file: add execute to user 
+		chmod g-w file: remove write from group 
+		chmod o=r file: sed read-only for others 
+
+Question 8-10: Script Writing 
+	Functions: 
+		myFunc() { 
+			echo "Hello, $1" 
+		}
+ 
+	Reading Input:
+		Example 1:				Example 2:  
+			echo "Enter your name:" 		while read line; do 
+			read name 					echo "$line"
+			echo "Hello, $name" 			done < file.txt 
+		
+	
+	Case Statement: 
+		case $var in 
+			a) echo "Option A";;
+			*) echo "Unknown";;
+		esac 
+	
+	Globs: for f in *.txt; do echo $f; done 
+ 	getopts Usage: 
+		Example 1: 				Example 2: 
+		while getopts ":a:b:" opt; do 		while getopts ":a:b:c" opt; do 
+			case $opt in 				case $opt in 
+				a) flagA = "$OPTARG" ;;			a)  echo "Option A with arg: $OPTARG";;
+				b) flabB = "$OPTARG" ;;			b)  echo "Option B with arg: $OPTARG";;
+			esac 						c)  echo "Option C selected" ;;
+		done 							\?) echo "Invalid option: %OPTARG";;
+	shift $((OPTIND -1))  						;)  echo "Missing argument for -$OPTARG";; 
+								esac 
+							done 
+							shift $((OPTIND -1)) 
+	*If you don't put a colon after a letter in the string (eg., "a:b:c" vs "abc"), then getopts assumes no argument is required 
+	*The : in the optstring indicates that an option requires an argument. If placed at the beginning, it silences error messages
+	 (used for manula error handling) 
+	If Statements: 
+		-e: File Exists			-f: File exists & Regular  	-d: File exists & Directory 
+		-s: File Exists & Not Empty	-r: Readable			-w: Writeable 
+		-x: Executable			-L: Sybolic Link
+	
+		
