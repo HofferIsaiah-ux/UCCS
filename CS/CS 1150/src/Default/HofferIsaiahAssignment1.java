@@ -1,0 +1,42 @@
+package Default;
+/* Isaiah Hoffer
+ * CS1150 (M/W)
+ * 9/4/24
+ * Assignment 1
+ * This code will show that I understand basic output functions, 
+ * by printing out paragraphs of information about myself. It will
+ * also show that I can output basic equations. 
+*/
+public class HofferIsaiahAssignment1 {
+	public static void main(String[] args) {
+		
+		//Part 1: Displaying Output
+		// I used "\n" to do line breaks 
+		System.out.println ("   My name is Isaiah Hoffer, and I love the idea of video games. I am fascinated - not only by how engaging they can be to play - \r\n"
+				+ "but also by how much work they put into every little thing. I love how we can make a world that's completely ridiculous just by coding \r\n"
+				+ "ita. Videogames are just people's imaginations coming to life, and we, as players, can enjoy that imagination anytime we want.\r\n"
+				+ "This is why I want to get my Computer Science degree, so I can bring my imagination to life and allow anyone in the world to live\r\n"
+				+ "within my imagination.");
+		
+		System.out.println("  My favorite hobby is probably trying to improve myself mentally and physically because I never really focused on my body\r\n"
+				+ "while growing up. So, I started going to the gym with my friends and tried to get more sleep instead of playing video games or\r\n"
+				+ "doing my homework earlier because I would push it off a lot. I also started eating better, and all of these things improved\r\n"
+				+ "how I live and feel immensely. I want to travel somewhere in Europe or Asia so I can get a better sense of the world we live in.\r\n"
+				+ "I also think traveling the world would make my imagination go further and allow me to make even better games.");
+
+		//Part 2: Working with Expressions 
+		System.out.println("\nSeconds between Lighting & Thunder     Distance (Miles)\n"
+				+ "----------------------------------------------------------");
+		
+		System.out.println("1                                      "+ (1100 * 1)/5280.0);
+		System.out.println("2                                      "+ (1100 * 2)/5280.0);
+		System.out.println("3                                      "+ (1100 * 3)/5280.0);
+		System.out.println("4                                      "+ (1100 * 4)/5280.0);
+		System.out.println("5                                      "+ (1100 * 5)/5280.0);
+		System.out.println("6                                      "+ (1100 * 6)/5280.0);
+		System.out.println("7                                      "+ (1100 * 7)/5280.0);
+		System.out.println("8                                      "+ (1100 * 8)/5280.0);
+		System.out.println("9                                      "+ (1100 * 9)/5280.0);
+		System.out.println("10                                     "+ (1100 * 10)/5280.0);
+	} 
+}

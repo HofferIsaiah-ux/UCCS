@@ -1,0 +1,24 @@
+#!/bin/bash
+# lab8.library
+
+#LAB-Q C1
+#--------------------------------------
+#Max function, returns greater value
+max() {
+	if [ $1 -gt $2 ]; then
+		echo $1
+	else
+		echo $2
+	fi
+}
+
+#Min Function, returns smaller value
+min() {
+	if [ $1 -lt $2 ]; then
+		echo $1
+	else
+		echo $2
+	fi 
+}
+
+

@@ -1,0 +1,4 @@
+6
+3 122 180000 Perishables Zurich
+0 245 100000 Medical Kyiv
+4 817 230000 Water Jackson

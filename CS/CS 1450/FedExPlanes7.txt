@@ -1,0 +1,7 @@
+10
+8 330 150000 Packages Zurich
+6 122 180000 Perishables Los Angeles
+0 245 100000 Medical Paris
+9 625 120000 Military Stuttgart
+4 817 230000 Water Jackson
+1 194 260000 Military Yokota
