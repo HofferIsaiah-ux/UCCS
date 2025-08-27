@@ -1,0 +1,8 @@
+7
+Melman giraffe 0 36 0
+Brutus alligator 20 15 0
+Sid sloth 1 0 2
+Bingo monkey 0 15 16
+Teddy bear 4 26 8
+Cranky alligator 17 20 0
+Boss bear 5 20 9

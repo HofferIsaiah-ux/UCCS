@@ -1,0 +1,26 @@
+Car Details
+Donkey
+Toyota Tundra
+15.0
+8.0
+
+Fiona
+Audi Q7
+21.0
+10.0
+
+Shrek
+Jeep CJ5
+14.0
+5.0
+
+Farquaad
+Smart Car
+42.0
+4.0
+
+Dragon
+Chevy Suburban
+12.0
+30.0
+
