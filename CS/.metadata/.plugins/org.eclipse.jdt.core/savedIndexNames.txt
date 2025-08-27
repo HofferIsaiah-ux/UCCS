@@ -1,0 +1,5 @@
+INDEX VERSION 1.134+C:\Users\hoffe\OneDrive - University of Colorado Colorado Springs\csworkspace\.metadata\.plugins\org.eclipse.jdt.core
+2786499524.index
+1865797976.index
+2698860847.index
+462401986.index

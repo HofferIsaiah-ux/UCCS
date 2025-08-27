@@ -1,0 +1,17 @@
+package Default;
+/* Isaiah Hoffer
+ * CS1150 (M/W)
+ * 9/4/24
+ * Assignment 1
+ * This code will show that I understand basic output functions, 
+ * by printing out paragraphs of information about myself. It will
+ * also show that I can program using basic math. 
+*/
+public class HofferIsaiahAssignment1 {
+public static void main(String[] args) {
+		
+		//Part 1: Displaying Output  
+		System.out.println ("  My name is Isaiah Hoffer an I love videogames.\n ff");
+		
+	}
+}
