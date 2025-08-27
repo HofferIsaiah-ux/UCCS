@@ -1,5 +1,0 @@
-		Important Descriptions 
-
-1. Paths - A List of a directory and subdirectory names leading to a directory or file 
-		absolute path - starts from the root directory, always starts will / 
-		relative path - starts from the current directory, never starts will / 

@@ -1,7 +1,0 @@
-Hello from the simple app
-42
-43
-44
-45
-46
-47
